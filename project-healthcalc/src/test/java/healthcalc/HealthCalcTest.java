@@ -14,7 +14,7 @@
 
 	    @Test
 	    @DisplayName("Peso ideal para un hombre de 170 cm")
-	    public void testIdealBodyWeight_Male() throws Exception {
+	    public void testIdealBodyWeight_Man() throws Exception {
 	        
 	        int height = 170;
 	        char gender = 'M';
@@ -25,10 +25,10 @@
 
 	    @Test
 	    @DisplayName("Peso ideal para una mujer de 160 cm")
-	    public void testIdealBodyWeight_Female() throws Exception {
+	    public void testIdealBodyWeight_Woman() throws Exception {
 	   
 	        int height = 160;
-	        char gender = 'F';
+	        char gender = 'W';
 	        float expectedWeight = 56.0f;
 
 	        float result = calc.idealWeight(height, gender);
@@ -51,7 +51,7 @@
 	    public void testIdealBodyWeight_MaxHeight() {
 	        
 	        int height = 220;
-	        char gender = 'F';
+	        char gender = 'W';
 
 	         assertDoesNotThrow(() -> calc.idealWeight(height, gender));
 	    }
@@ -102,11 +102,11 @@
 
 	    
 	    
-	 // ✅ Pruebas para basalMetabolicRate con AAA
+	 // Pruebas para basalMetabolicRate con AAA
 
 	    @Test
 	    @DisplayName("TMB para un hombre de 70kg, 175cm y 25 años")
-	    public void testBasalMetabolicRate_Male() throws Exception {
+	    public void testBasalMetabolicRate_Man() throws Exception {
 	        float weight = 70;
 	        int height = 175;
 	        int age = 25;
@@ -120,11 +120,11 @@
 
 	    @Test
 	    @DisplayName("TMB para una mujer de 60kg, 165cm y 30 años")
-	    public void testBasalMetabolicRate_Female() throws Exception {
+	    public void testBasalMetabolicRate_Woman() throws Exception {
 	        float weight = 60;
 	        int height = 165;
 	        int age = 30;
-	        char gender = 'F';
+	        char gender = 'W';
 	        float expectedBMR = 1400.0f;
 
 	        float result = calc.basalMetabolicRate(weight, height, age, gender);
@@ -149,7 +149,7 @@
 	        float weight = 200;
 	        int height = 190;
 	        int age = 40;
-	        char gender = 'F';
+	        char gender = 'W';
 
 	        assertDoesNotThrow(() -> calc.basalMetabolicRate(weight, height, age, gender));
 	    }
