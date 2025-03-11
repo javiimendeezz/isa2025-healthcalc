@@ -4,8 +4,8 @@
 
 HealthCalc es una calculadora de salud que permite estimar dos métricas clave para una persona:
 
-1. **Peso Ideal (IW)**: Se calcula con la fórmula de **Lorentz** en función de la altura y el género.
-2. **Tasa Metabólica Basal (BMR)**: Se calcula con la **ecuación de Harris-Benedict**, que estima el gasto energético diario en reposo.
+1. **Peso Ideal (IW)**: La calculamos con la fórmula de **Lorentz** en función de la altura y el género.
+2. **Tasa Metabólica Basal (BMR)**: La calculamos con la **ecuación de Harris-Benedict**, que estima el gasto energético diario en reposo.
 
 Esta calculadora pretende ser utilizada como una herramienta auxiliar en la estimación de parámetros de salud de las personas
 .
@@ -74,3 +74,14 @@ A continuación, describo los casos de prueba diseñados para verificar el corre
 
 
 
+## Captura de ejecución de tests en Maven
+La siguiente imagen muestra la ejecución exitosa de todos los casos de prueba en Maven, confirmando que la implementación funciona correctamente.
+
+![Captura de tests en Maven](project-healthcalc/docs/maven-tests.png)
+
+---
+
+## Captura de commits en `gitk`
+Aquí presento una captura de `gitk`, donde podemos ver todos los commits realizados durante la **Práctica 1**, siguiendo la convención `Conventional Commits`.
+
+![Captura de gitk con commits](project-healthcalc/docs/gitk-history.png)
