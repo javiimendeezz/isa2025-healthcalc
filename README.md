@@ -12,26 +12,28 @@ Esta calculadora pretende ser utilizada como una herramienta auxiliar en la esti
 
 ## Fórmulas utilizadas
 
-### 1. Cálculo del Peso Ideal
+### 1. Cálculo del Peso Ideal (Lorentz)
+
 El peso ideal se calcula utilizando la **fórmula de Lorentz**:
 
-- **Para hombres**:  
-  $$ IW = \text{altura} - 100 - \frac{(\text{altura} - 150)}{4} $$
+**Para hombres:**  
+`IW = altura - 100 - ((altura - 150) / 4)`
 
-- **Para mujeres**:  
-  $$ IW = \text{altura} - 100 - \frac{(\text{altura} - 150)}{2.5} $$
-
+**Para mujeres:**  
+`IW = altura - 100 - ((altura - 150) / 2.5)`
 
 ---
 
-###  2. Cálculo de la Tasa Metabólica Basal (TMB)
-Usamos la **ecuación de Harris-Benedict**para estimar el metabolismo basal:
+### 2. Cálculo de la Tasa Metabólica Basal (TMB) - Harris-Benedict
 
-- **Para hombres**:  
-  $$ BMR = 88.362 + (13.397 \times \text{peso}) + (4.799 \times \text{altura}) - (5.677 \times \text{edad}) $$
+Usamos la **ecuación de Harris-Benedict** para estimar el metabolismo basal:
 
-- **Para mujeres**:  
-  $$ BMR = 447.593 + (9.247 \times \text{peso}) + (3.098 \times \text{altura}) - (4.330 \times \text{edad}) $$
+**Para hombres:**  
+`BMR = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * edad)`
+
+**Para mujeres:**  
+`BMR = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * edad)`
+
 
 
 ---
@@ -77,11 +79,11 @@ A continuación, describo los casos de prueba diseñados para verificar el corre
 ## Captura de ejecución de tests en Maven
 La siguiente imagen muestra la ejecución exitosa de todos los casos de prueba en Maven, confirmando que la implementación funciona correctamente.
 
-![Captura de tests en Maven](project-healthcalc/docs/maven-tests.png)
+![Captura de tests en Maven](project-healthcalc/docs/maven-tests.PNG)
 
 ---
 
 ## Captura de commits en `gitk`
 Aquí presento una captura de `gitk`, donde podemos ver todos los commits realizados durante la **Práctica 1**, siguiendo la convención `Conventional Commits`.
 
-![Captura de gitk con commits](project-healthcalc/docs/gitk-history.png)
+![Captura de gitk con commits](project-healthcalc/docs/gitk-history.PNG)
