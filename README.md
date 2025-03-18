@@ -110,3 +110,56 @@ El siguiente diagrama amplía la funcionalidad básica añadiendo dos nuevos cas
 
 ### Especificación de un caso de uso
 
+
+**Nombre del caso de uso:** Calcular el Índice de Masa Corporal (IMC)
+
+**Actor principal:** Usuario
+
+**Ámbito:** Sistema HealthCalc
+
+**Nivel:** Objetivo del usuario
+
+**Stakeholders e intereses:**
+- **Usuario:** Quiere calcular su IMC para conocer su situación respecto al peso y la salud.
+- **Sistema HealthCalc:** Calcula el IMC y una interpretación clara del resultado.
+
+**Precondiciones:**
+- El usuario ha accedido a la aplicación HealthCalc.
+- El usuario conoce su peso en kilogramos y su altura en centímetros.
+
+**Garantías mínimas:**
+- El sistema no se bloquea y gestiona adecuadamente entradas inválidas.
+
+**Garantía de éxito (Postcondiciones):**
+- El sistema devuelve el valor del IMC y su clasificación (bajo peso, peso normal, sobrepeso, obesidad).
+
+**Disparador:**
+- El usuario selecciona la opción "Calcular IMC" e introduce su peso y altura.
+
+**Escenario principal (flujo de éxito):**
+1. El usuario selecciona "Calcular IMC".
+2. El sistema solicita al usuario el peso (kg) y la altura (cm).
+3. El usuario introduce los valores requeridos.
+4. El sistema valida que los datos sean correctos y estén dentro de los rangos permitidos.
+5. El sistema calcula el IMC utilizando la fórmula: IMC = peso / (altura²).
+6. El sistema muestra al usuario el resultado del IMC junto a su interpretación según rangos de salud.
+
+**Extensiones (Flujos alternativos):**
+- **2a.** El usuario cancela la operación:
+  - El sistema cancela el cálculo y vuelve al menú principal.
+- **3a.** El usuario introduce un dato inválido (fuera de rango o formato incorrecto):
+  - El sistema muestra un mensaje de error indicando el problema.
+  - El usuario puede volver a introducir los datos.
+
+**Requisitos especiales:**
+- El peso debe estar entre 30 kg y 300 kg.
+- La altura debe estar entre 100 cm y 250 cm.
+- El resultado se mostrará con dos decimales de precisión.
+
+**Frecuencia de uso:**
+- Ocasional, cuando el usuario desee conocer su IMC.
+
+**Cuestiones abiertas:**
+- No se han identificado por el momento.
+
+
