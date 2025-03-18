@@ -1,18 +1,19 @@
 # HealthCalc - Calculadora de Salud 🏥
 
-##  Descripción General
+## Práctica 1
+
+### Descripción General
 
 HealthCalc es una calculadora de salud que permite estimar dos métricas clave para una persona:
 
 1. **Peso Ideal (IW)**: La calculamos con la fórmula de **Lorentz** en función de la altura y el género.
 2. **Tasa Metabólica Basal (BMR)**: La calculamos con la **ecuación de Harris-Benedict**, que estima el gasto energético diario en reposo.
 
-Esta calculadora pretende ser utilizada como una herramienta auxiliar en la estimación de parámetros de salud de las personas
-.
+Esta calculadora pretende ser utilizada como una herramienta auxiliar en la estimación de parámetros de salud de las personas.
 
-## Fórmulas utilizadas
+### Fórmulas utilizadas
 
-### 1. Cálculo del Peso Ideal (Lorentz)
+#### 1. Cálculo del Peso Ideal (Lorentz)
 
 El peso ideal se calcula utilizando la **fórmula de Lorentz**:
 
@@ -24,7 +25,7 @@ El peso ideal se calcula utilizando la **fórmula de Lorentz**:
 
 ---
 
-### 2. Cálculo de la Tasa Metabólica Basal (TMB) - Harris-Benedict
+#### 2. Cálculo de la Tasa Metabólica Basal (TMB) - Harris-Benedict
 
 Usamos la **ecuación de Harris-Benedict** para estimar el metabolismo basal:
 
@@ -34,16 +35,13 @@ Usamos la **ecuación de Harris-Benedict** para estimar el metabolismo basal:
 **Para mujeres:**  
 `BMR = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * edad)`
 
-
-
 ---
 
-## Casos de prueba
+### Casos de prueba
 
 A continuación, describo los casos de prueba diseñados para verificar el correcto funcionamiento de la clase `HealthCalcImpl`.
 
-
-### **1. Cálculo del Peso Ideal (`idealBodyWeight`)**
+#### **1. Cálculo del Peso Ideal (`idealBodyWeight`)**
 | Caso de prueba | Entrada | Salida esperada |
 |---------------|---------|----------------|
 | Hombre de 170 cm | `height = 170`, `gender = 'M'` | Peso ideal ≈ 65 kg |
@@ -57,7 +55,7 @@ A continuación, describo los casos de prueba diseñados para verificar el corre
 
 ---
 
-### **2. Cálculo de la Tasa Metabólica Basal (`basalMetabolicRate`)**
+#### **2. Cálculo de la Tasa Metabólica Basal (`basalMetabolicRate`)**
 | Caso de prueba | Entrada | Salida esperada |
 |---------------|---------|----------------|
 | Hombre de 70kg, 175cm, 25 años | `weight = 70`, `height = 175`, `age = 25`, `gender = 'M'` | TMB ≈ 1724 kcal |
@@ -75,15 +73,31 @@ A continuación, describo los casos de prueba diseñados para verificar el corre
 | Formato incorrecto (edad no numérica)** | `weight = 70`, `height = 175`, `age = "xxxx"`, `gender = 'M'` | Excepción o mensaje de error |
 
 
+---
 
-## Captura de ejecución de tests en Maven
+### Captura de ejecución de tests en Maven
 La siguiente imagen muestra la ejecución exitosa de todos los casos de prueba en Maven, confirmando que la implementación funciona correctamente.
 
 ![Captura de tests en Maven](project-healthcalc/docs/maven-tests.PNG)
 
 ---
 
-## Captura de commits en `gitk`
+### Captura de commits en `gitk`
 Aquí presento una captura de `gitk`, donde podemos ver todos los commits realizados durante la **Práctica 1**, siguiendo la convención `Conventional Commits`.
 
 ![Captura de gitk con commits](project-healthcalc/docs/gitk-history.PNG)
+
+---
+
+## Práctica 2
+
+### Diagramas de casos de uso
+
+#### Diagrama de casos de uso básico
+
+
+#### Diagrama de casos de uso extendido
+
+
+### Especificación de un caso de uso
+
