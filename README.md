@@ -105,7 +105,7 @@ El siguiente diagrama amplía la funcionalidad básica añadiendo dos nuevos cas
 - **Calcular el Índice de Masa Corporal (IMC):** Permite al usuario obtener su IMC a partir de su peso y altura.
 - **Calcular la Frecuencia Cardíaca Máxima (FCM):** Estima la frecuencia cardíaca máxima según la edad, útil para la planificación de ejercicios y control de salud.
 
-![Extended Use Case Diagram](project-healthcalc/docs/casos_uso_extended.png)
+![Extended Use Case Diagram](project-healthcalc/docs/casos_uso_ext.png)
 
 
 ### Especificación de un caso de uso
