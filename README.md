@@ -95,8 +95,17 @@ Aquí presento una captura de `gitk`, donde podemos ver todos los commits realiz
 
 #### Diagrama de casos de uso básico
 
+El siguiente diagrama representa los casos de uso iniciales de la calculadora de salud. El usuario puede calcular su peso ideal utilizando la fórmula de Lorentz o calcular su tasa metabólica basal (TMB) mediante la ecuación de Harris-Benedict.
+
+![Basic Use Case Diagram](project-healthcalc/docs/casos_uso_basic.png)
 
 #### Diagrama de casos de uso extendido
+
+El siguiente diagrama amplía la funcionalidad básica añadiendo dos nuevos casos de uso:
+- **Calcular el Índice de Masa Corporal (IMC):** Permite al usuario obtener su IMC a partir de su peso y altura.
+- **Calcular la Frecuencia Cardíaca Máxima (FCM):** Estima la frecuencia cardíaca máxima según la edad, útil para la planificación de ejercicios y control de salud.
+
+![Extended Use Case Diagram](project-healthcalc/docs/casos_uso_extended.png)
 
 
 ### Especificación de un caso de uso
